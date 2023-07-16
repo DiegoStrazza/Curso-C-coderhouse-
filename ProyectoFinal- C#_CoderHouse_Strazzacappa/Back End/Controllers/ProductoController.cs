@@ -49,7 +49,7 @@ namespace ProyectoFinalCoderHouse.Controllers
             return ProductoHandler.InsertProducto(producto);
         }
 
-        [HttpDelete]
+        [HttpDelete("{idProducto}")]
         //Prueba Postman con JSON
         //1034
         public bool DeleteProductos([FromBody] int idProducto)
